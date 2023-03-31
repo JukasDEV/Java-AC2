@@ -1,4 +1,4 @@
-public class IngressoVIPI extends Ingresso {
+public class IngressoVIP extends Ingresso {
     double valorAdicional;
 
     public double calcularValor() {
