@@ -1,6 +1,11 @@
 public class Show extends Evento {
     String artista;
 
+    
+
+    Show(String nome, String local, int capacidade, Ingresso ingresso, String artista) {
+        super(nome, local, capacidade, ingresso);
+    }
     @Override
     public void gravar() {
         System.out.println("Gravando um show!");

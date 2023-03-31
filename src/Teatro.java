@@ -4,6 +4,13 @@ public class Teatro extends Evento {
         System.out.println("Você não deveria gravar uma peça de teatro...");
     }
 
+
+    Teatro(String nome, String local, int capacidade, Ingresso ingresso){
+        super(nome, local, capacidade, ingresso);
+    }
+
+
+
     @Override
     public String toString() {
         String msg;

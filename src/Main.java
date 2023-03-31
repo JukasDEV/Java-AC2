@@ -11,9 +11,12 @@ public class Main {
 
         System.out.println(ingresso);
 
-        Cinema cinema = new Cinema();
-        Show show = new Show();
-        Teatro teatro = new Teatro();
+        Cinema cinema = new Cinema(null, null, 0, ingresso);
+        Show show = new Show(null, null, 0, ingresso, null);
+        Teatro teatro = new Teatro(null, null, 0, ingresso);
+
+        System.out.println(cinema);
+        System.out.println(show);
 
         cinema.nome = "John Wick";
         cinema.local = "Tijuca";

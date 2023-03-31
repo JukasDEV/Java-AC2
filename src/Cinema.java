@@ -1,4 +1,9 @@
 public class Cinema extends Evento {
+    public Cinema(String nome2, String local2, int capacidade2, Ingresso ingresso2) {
+        super(nome2, local2, capacidade2, ingresso2);
+        //TODO Auto-generated constructor stub
+    }
+
     String cinema, sala, genero;
 
     @Override
