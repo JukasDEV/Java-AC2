@@ -1,16 +1,14 @@
 public abstract class Evento {
-    String nome, local;
+    String nome;
+    String local;
     int capacidade;
 
     public abstract void gravar();
 
-    public boolean verificarCapacidade(int numPessoas){
-        if(this.capacidade < numPessoas){
-            System.out.println("Passou o limite de capacidade!"); 
-            return false;
+    public boolean verificarCapacidade(int numPessoas) {
+        if (numPessoas <= this.capacidade) {
+            return true;
         }
-        System.out.println("Evento com capacidade OK!");
-        return true;
-        
+        return false;
     }
 }

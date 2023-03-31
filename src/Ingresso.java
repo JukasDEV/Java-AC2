@@ -1,7 +1,8 @@
 public class Ingresso {
     double valor;
 
-    public String toString(){
-        return "Valor: " + this.valor;
+    @Override
+    public String toString() {
+        return "Valor do ingresso: " + this.valor;
     }
 }
